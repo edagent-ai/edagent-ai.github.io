@@ -148,6 +148,30 @@
 
     a.gh-link:hover { border-color: #58a6ff; }
 
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(13, 17, 23, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #21262d;
+    }
+
+    .header-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #e6edf3;
+    }
+
+    .header-title span { color: #58a6ff; }
+
     footer {
       position: fixed;
       bottom: 1.5rem;
@@ -158,6 +182,10 @@
   </style>
 </head>
 <body>
+
+  <header>
+    <span class="header-title">EdAgent<span>.AI</span></span>
+  </header>
 
   <!-- ambient floating education symbols -->
   <div class="bg-symbols" aria-hidden="true"></div>
